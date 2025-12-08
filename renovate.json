@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Auto-update New Relic APM agents",
+  "packageRules": [
+    {
+      "description": "Auto-merge minor/patch NR updates",
+      "matchPackagePatterns": ["^newrelic"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "pr",
+      "labels": ["nr-agent-update"]
+    },
+    {
+      "description": "Manual review for major NR updates",
+      "matchPackagePatterns": ["^newrelic"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "labels": ["nr-major-update", "requires-review"]
+    }
+  ]
+}
