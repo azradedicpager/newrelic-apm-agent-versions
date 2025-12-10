@@ -1,6 +1,6 @@
 # New Relic APM Agent Versions - Centralized Management
 
-This repository provides a centralized Renovate preset for managing New Relic APM agent versions across Navigation nodejs applications.
+This repository provides a centralized Renovate preset for managing New Relic APM agent versions across Navigation node.js applications.
 
 ## Overview
 
