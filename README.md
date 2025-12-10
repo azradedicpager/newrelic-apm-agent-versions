@@ -1,10 +1,10 @@
 # New Relic APM Agent Versions - Centralized Management
 
-This repository provides a centralized Renovate preset for managing New Relic APM agent versions across all Pager applications.
+This repository provides a centralized Renovate preset for managing New Relic APM agent versions across Navigation nodejs applications.
 
 ## Overview
 
-Instead of each app updating to the latest New Relic agent independently, this preset ensures all apps converge to a **single approved version** defined here.
+Instead of each app updating to the latest New Relic agent independently, this preset ensures all apps converge to a **single approved version** defined in **versions/newrelic_versions.yaml**.
 
 ## How It Works
 
@@ -210,5 +210,4 @@ After apps deploy with updated agent:
 ## Contact
 
 For questions or issues with this preset:
-- **SRE(Odin) Team** -
-
+- **SRE (Odin) Team** - for quarterly updates, deployment coordination, and Renovate configuration questions
