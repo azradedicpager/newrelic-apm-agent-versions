@@ -1,21 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Auto-update New Relic APM agents",
+  "description": "Auto-update New Relic APM agents to centrally managed version",
   "packageRules": [
     {
-      "description": "Auto-merge minor/patch NR updates",
-      "matchPackagePatterns": ["^newrelic"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "description": "Pin New Relic to approved version from central YAML - UPDATE THIS QUARTERLY",
+      "matchPackagePatterns": ["^newrelic$"],
+      "allowedVersions": "13.6.6",
+      "matchUpdateTypes": ["minor", "patch", "major"],
       "automerge": true,
       "automergeType": "pr",
-      "labels": ["nr-agent-update"]
-    },
-    {
-      "description": "Manual review for major NR updates",
-      "matchPackagePatterns": ["^newrelic"],
-      "matchUpdateTypes": ["major"],
-      "automerge": false,
-      "labels": ["nr-major-update", "requires-review"]
+      "labels": ["nr-agent-update", "centrally-managed"]
     }
   ]
 }
