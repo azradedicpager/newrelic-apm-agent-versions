@@ -1,3 +1,14 @@
+# New Relic APM Agent Target Versions
+# =====================================
+# IMPORTANT: This file is for DOCUMENTATION only.
+# When updating versions, you MUST also update renovate.json
+# 
+# Quarterly Update Checklist:
+#   1. Update this file (newrelic_versions.yaml)
+#   2. Update renovate.json (allowedVersions field)
+#   3. Commit both files together
+# =====================================
+
 nodejs:
   development: "13.6.6"
   
